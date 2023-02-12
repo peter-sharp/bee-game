@@ -1,0 +1,40 @@
+body {
+    margin: 0; }
+
+    .flower {
+        font-size: 4em; }
+
+    [slot="tile"] {
+        --x: 0;
+        --y: 0;
+        box-sizing: border-box;
+        border-top: solid 5px;
+        border-left: solid 5px;
+        border-color: #1f5c00;
+        background-color: #336600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: calc(var(--y) * 6em);
+        left: calc(var(--x) * 6em);
+        width: 6em;
+        height: 6em;
+        z-index: 0; }
+
+        [slot="bee"] {
+            --x: 0;
+            --y: 0;
+            height: 6em;
+            position: absolute;
+            width: 6em;
+            z-index: 100; }
+
+
+  bee-game {
+    display: block;
+    background-color: #113300;
+    height: 100vh;
+  }
+  
+ 

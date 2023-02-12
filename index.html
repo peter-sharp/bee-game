@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="bee-game.css">
+</head>
+<body>
+<bee-game>
+    <img slot="bee" src="bee.svg"/>
+    <div slot="tile"></div>
+    <div slot="tile" style="--y: 1"></div>
+    <div slot="tile" style="--y: 2"></div>
+    <div slot="tile" style="--y: 3"></div>
+    <div slot="tile" style="--y: 3; --x: 1"></div>
+    <div slot="tile" style="--y: 3; --x: 2"></div>
+    <div slot="tile" style="--y: 2; --x: 2"></div>
+    <div slot="tile" style="--y: 2; --x: 3"></div>
+    <div slot="tile" style="--y: 2; --x: 4"></div>
+    <div slot="tile" style="--y: 3; --x: 4"></div>
+    <div slot="tile" data-tile="end" style="--y: 3; --x: 4">
+         <span class="flower">&#127801;</span>
+    </div>
+</bee-game>
+<script src="bee-game.js"></script>
+</body>
+</html>
